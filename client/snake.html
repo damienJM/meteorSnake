@@ -1,0 +1,40 @@
+<head>
+  <title>snake</title>
+
+
+</head>
+
+<body>
+	
+  {{> wrapper}}
+</body>
+
+<template name="wrapper">
+<!--	 <input type="button" class="win1" value="Join window1"/>
+	 <input type="button" class="win2" value="Join window2"/>
+  <h1>Hello World!</h1>
+  {{ greeting }}
+	{{#each dots}}
+		{{>dots}}
+	{{/each}}
+
+	
+<!--  
+  <input type="button" class="add_win1"value="add dot to win1"/>
+  <input type="button" class="add_win2" value="add dot to win2"/>
+-->
+
+{{>canvas}}
+
+</template>
+<template name="dots">
+	<div class="player">
+		<span class="name">{{name}}</span>
+		
+	</div>
+</template>
+<template name="canvas">
+{{#constant}}
+	<canvas id="myCanvas" resize></canvas>
+{{/constant}}	
+</template>
